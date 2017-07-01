@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xing.loadingview.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.xing.loadingviewlib.LoadingView
+            android:id="@+id/load_view1"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            app:color="@color/colorAccent"
+            app:isShowResult="true" />
+
+
+        <com.xing.loadingviewlib.LoadingView
+            android:id="@+id/load_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:color="@color/colorAccent"
+            app:isShowResult="true"
+            app:storkeWidth="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_success"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="success" />
+
+
+            <Button
+                android:id="@+id/btn_fail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="fail" />
+        </LinearLayout>
+
+
+        <com.xing.loadingviewlib.PathMeasureView
+            android:layout_width="200dp"
+            android:layout_height="600dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
